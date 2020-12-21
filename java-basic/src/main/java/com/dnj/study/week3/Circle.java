@@ -1,11 +1,14 @@
 package com.dnj.study.week3;
 
+import lombok.Data;
+
 /**
  * @ClassName Circle
  * @Description TODO
  * @Author dnj
  * @Date 2020/10/19
  **/
+@Data
 public class Circle extends Point{
     private int r;
 
@@ -31,4 +34,6 @@ public class Circle extends Point{
     public double getArea(){
         return Math.PI * r * r;
     }
+
+
 }

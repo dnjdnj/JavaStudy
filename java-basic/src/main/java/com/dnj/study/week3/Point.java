@@ -1,7 +1,7 @@
 package com.dnj.study.week3;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 
 /**
  * @ClassName Point
@@ -9,13 +9,13 @@ import lombok.Builder;
  * @Author dnj
  * @Date 2020/10/19
  **/
-
+@Data
 @Builder
-@AllArgsConstructor
+
 
 public class Point {
-    private Integer x;
-    private Integer y;
+    private int x;
+    private int y;
 
     public Point(){
         System.out.println("点被初始化");
