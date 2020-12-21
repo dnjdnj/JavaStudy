@@ -29,6 +29,13 @@ public class JdbcDemo1 {
         while (rs.next()){
             int classId = rs.getInt("class_id");
             String studentName = rs.getString("student_name");
+            short gender = rs.getShort(6);
+            Object birthday = rs.getObject("birthdat");
+            System.out.println(classId + "," + studentName + "," + gender + "," + birthday);
         }
+        //7.关闭连接
+        rs.close();
+        statement.close();
+        conn.close();
     }
 }
